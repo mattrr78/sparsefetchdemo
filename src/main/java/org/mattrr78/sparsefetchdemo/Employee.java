@@ -1,37 +1,8 @@
 package org.mattrr78.sparsefetchdemo;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
-public interface Employee {
-
-    int getId();
-
-    String getNamePrefix();
-
-    String getFirstName();
-
-    String getMiddleInitial();
-
-    String getLastName();
-
-    String getGender();
-
-    String getEmail();
-
-    String getFatherName();
-
-    String getMotherFullName();
-
-    String getMotherMaidenName();
-
-    LocalDate getDateOfBirth();
-
-    LocalTime getTimeOfBirth();
-
-    int getAge();
-
-    int getWeight();
+public interface Employee extends Person {
 
     LocalDate getJoinDate();
 
@@ -58,10 +29,6 @@ public interface Employee {
     int getSalary();
 
     int getPercentHike();
-
-    String getSocialSecurityNumber();
-
-    String getPhone();
 
     String getLocationName();
 
